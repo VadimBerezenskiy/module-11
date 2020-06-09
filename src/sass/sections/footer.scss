@@ -1,0 +1,50 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 63px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer__box {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.footer__description {
+  margin: 0;
+}
+
+.footer__description-link {
+  color: $hover-link-color;
+  text-decoration: none;
+}
+
+.footer__contact-form {
+  display: flex;
+}
+
+.footer__contact-form-input {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  border: 1px solid #e7e7e7;
+  border-right: none;
+  width: 230px;
+  padding: 10px 14px;
+}
+
+.footer__contact-form-btn {
+  width: 150px;
+  background-color: #95e1d3;
+  font-family: $main-family-font;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 17px;
+  text-align: center;
+  cursor: pointer;
+}

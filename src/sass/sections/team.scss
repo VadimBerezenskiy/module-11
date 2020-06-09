@@ -1,0 +1,138 @@
+.team {
+  padding-bottom: 78px;
+}
+
+.team__title {
+  margin-bottom: 40px;
+}
+
+.team__description {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: #999999;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  font-weight: 400;
+  text-align: center;
+  width: 980px;
+  margin: 0 auto 88px;
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__list-wrapper-photo {
+  position: relative;
+}
+
+.team__list-person-photo {
+  margin-bottom: 27px;
+  transition: all 200ms linear;
+}
+
+.team__list-wrapper-photo:hover .overlay {
+  visibility: visible;
+  transform: translate(-10px, -10px);
+}
+
+.team__list-wrapper-photo:hover .team__list-person-photo {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px #95e1d3;
+}
+
+.team__list-person-name {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 17px;
+  text-align: center;
+  margin: 0 0 7px;
+}
+
+.team__list-person-post {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #999999;
+  font-style: italic;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    0deg,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 200ms linear;
+}
+
+.overlay__list {
+  display: flex;
+  padding: 0;
+}
+
+.overlay__list-item-link {
+  display: block;
+  position: relative;
+  background-color: rgba(252, 227, 138, 1);
+  background-clip: padding-box;
+  width: 56px;
+  height: 56px;
+  transition: all 200ms linear;
+}
+
+.overlay__list-item-link:nth-child(-n + 1) {
+  border-right: 1px solid rgba(243, 129, 129, 0.5);
+}
+
+.overlay__list-item-link:hover {
+  background-color: $hover-link-color;
+  fill: #ffffff;
+  cursor: pointer;
+}
+
+.overlay__list-item-link-icon {
+  fill: $hover-link-color;
+  position: absolute;
+  top: 15px;
+  height: 27px;
+}
+
+.overlay__list-item-link:hover .overlay__list-item-link-icon {
+  fill: #ffffff;
+}
+
+.overlay__list-item-link_facebook {
+  left: 22px;
+  width: 14px;
+}
+
+.overlay__list-item-link_twitter {
+  left: 14px;
+  width: 32px;
+}
+
+.overlay__list-item-link_pinterest {
+  left: 17px;
+  width: 22px;
+}
+
+.overlay__list-item-link_instagram {
+  left: 15px;
+  width: 27px;
+}

@@ -1,0 +1,82 @@
+.services {
+  padding-top: 43px;
+  padding-bottom: 86px;
+}
+
+.services__title {
+  margin-bottom: 65px;
+}
+
+.title-sections::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  padding-top: 39px;
+  width: 61px;
+  border-bottom: 4px solid $hover-link-color;
+}
+
+.services__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.services__item {
+  flex-basis: 382px;
+  background-repeat: no-repeat;
+  background-position-x: 20px;
+}
+
+.services__item:nth-of-type(-n + 3) {
+  margin-bottom: 96px;
+}
+
+.services__item_icon-clock {
+  background-image: url(../../images/icon/services/alarm1.svg);
+}
+
+.services__item_icon-line-graph {
+  background-image: url(../../images/icon/services/linegraph2.svg);
+}
+
+.services__item_icon-computer {
+  background-image: url(../../images/icon/services/computer3.svg);
+}
+
+.services__item_icon-book {
+  background-image: url(../../images/icon/services/book4.svg);
+}
+
+.services__item_icon-home {
+  background-image: url(../../images/icon/services/home5.svg);
+}
+
+.services__item_icon-image {
+  background-image: url(../../images/icon/services/image6.svg);
+}
+
+.services__item-text {
+  width: 300px;
+  margin-left: 82px;
+}
+
+.services__item-title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0 0 12px;
+}
+
+.services__item-description {
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #999999;
+  line-height: 24px;
+  margin: 0;
+}
