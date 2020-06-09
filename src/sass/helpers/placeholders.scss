@@ -1,0 +1,23 @@
+%flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+%title-main-styles {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+%title-kaushan {
+  display: block;
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: none;
+}
+
+%section-title-kaushan {
+  font-size: 24px;
+  margin-bottom: 16px;
+}

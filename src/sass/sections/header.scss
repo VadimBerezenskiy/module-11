@@ -1,22 +1,55 @@
 .header {
-  background: url(../../images/header-fond/picture-fond.png) center no-repeat;
+  background: url(../images/header-fond/picture-fond.png) center no-repeat;
   background-size: cover;
   color: $header-color-text;
   padding-top: 21px;
   padding-bottom: 230px;
-}
 
-@media (min-resolution: 192dpi) {
-  .header {
-    background-image: url(../../images/header-fond/picture-fond@2x.png);
+  @media (min-resolution: 192dpi) {
+    background-image: url(../images/header-fond/picture-fond@2x.png);
+  }
+
+  &__title {
+    @extend %title-main-styles;
+    margin: 0 auto 114px;
+    max-width: 900px;
+    font-size: 150px;
+    letter-spacing: -6px;
+    line-height: 136px;
+
+    &-kaushan {
+      @extend %title-kaushan;
+      padding-bottom: 38px;
+      font-size: 72px;
+      letter-spacing: 0px;
+    }
+  }
+
+  &__link-learn-more {
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    border: 3px solid $header-color-text;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: $header-color-text;
+    width: 160px;
+    height: 40px;
   }
 }
 
 .nav-blok {
-  display: flex;
-  justify-content: space-between;
+  @extend %flex-between;
   align-items: baseline;
   margin-bottom: 163px;
+
+  &__wrapper-nav-list {
+    @extend %flex-between;
+    flex-basis: 618px;
+  }
 }
 
 .logo {
@@ -29,75 +62,39 @@
   cursor: pointer;
 }
 
-.nav-blok__wrapper-nav-list {
-  display: flex;
-  flex-basis: 618px;
-  justify-content: space-between;
-}
-
 .nav-list {
-  display: flex;
-  justify-content: space-between;
-}
+  @extend %flex-between;
 
-.nav-list__site {
-  flex-basis: 490px;
-}
+  &__site {
+    flex-basis: 490px;
+  }
 
-.nav-list__icon {
-  flex-basis: 76px;
-}
+  &__icon {
+    flex-basis: 76px;
+  }
 
-.nav-list__link:hover {
-  color: #fce38a;
-  fill: #fce38a;
-  cursor: pointer;
-  border-bottom: 4px solid #fce38a;
-  width: 100%;
-  padding-bottom: 10px;
-}
+  &__link {
+    font-family: $main-family-font;
+    color: $header-color-text;
+    fill: $header-color-text;
+    line-height: 1.2;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: all 300ms linear;
 
-.nav-list__link {
-  font-family: $main-family-font;
-  color: $header-color-text;
-  fill: $header-color-text;
-  line-height: 1.2;
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-  transition: all 300ms linear;
-}
+    &:hover {
+      color: #fce38a;
+      fill: #fce38a;
+      cursor: pointer;
+      border-bottom: 4px solid #fce38a;
+      width: 100%;
+      padding-bottom: 10px;
+    }
 
-.nav-list__link_icon {
-  width: 18px;
-  height: 18px;
-}
-
-.header__title {
-  margin: 0 auto 114px;
-  max-width: 900px;
-  font-size: 150px;
-  letter-spacing: -6px;
-  line-height: 136px;
-}
-
-.header__title_kaushan {
-  padding-bottom: 38px;
-  font-size: 72px;
-  letter-spacing: 0px;
-}
-
-.header__link-learn-more {
-  display: block;
-  margin: 0 auto;
-  padding-top: 10px;
-  border: 3px solid $header-color-text;
-  background-color: transparent;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  color: $header-color-text;
-  width: 160px;
-  height: 40px;
+    &_icon {
+      width: 18px;
+      height: 18px;
+    }
+  }
 }
